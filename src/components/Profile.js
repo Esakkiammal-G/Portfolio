@@ -25,7 +25,7 @@ const Profile = () => {
           </div>
           <div className="profile-image-container">
             <img
-              src="Profile.jpg" 
+              src={`${process.env.PUBLIC_URL}/Profile.jpg`}
               alt="Esakkiammal G"
               className="profile-image"
             />

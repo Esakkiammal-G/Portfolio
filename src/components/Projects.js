@@ -1,5 +1,6 @@
 import React from "react";
 
+// Define projects array outside component to avoid recreation on each render
 const projects = [
   {
     title: "Pepper Spraying Alert Necklace",
