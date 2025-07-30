@@ -2,21 +2,27 @@ import React, { useEffect, useState } from 'react';
 
 
 const Profile = () => {
-  const [animate, setAnimate] = useState(false);
-
-  useEffect(() => {
-    // Reset the animation by setting the state
-    setAnimate(false);
-    // Trigger reflow to reset the animation
-    setTimeout(() => {
-      setAnimate(true);
-    }, 10); // A small timeout to allow the state change to take effect
-  }, []);
-
   return (
     <section id="profile">
-      <section className={`profile-section ${animate ? 'fade-in-animation' : ''}`}>
+      <div className="profile-section">
         <div className="profile-container">
+          <div className="profile-text">
+            <div className="subtitle">Computer Science Student</div>
+            <h2>Hello, I'm <span className="text-gradient">Esakkiammal</span></h2>
+            <p>
+              A passionate Computer Science Engineering student with expertise in web development, 
+              programming, and innovative problem-solving. I create efficient, user-friendly solutions 
+              and continuously explore new technologies to make a positive impact in the tech world.
+            </p>
+            <div className="cta-buttons">
+              <a href="#projects" className="btn-primary">
+                View My Work
+              </a>
+              <a href="#contact" className="btn-secondary">
+                Get In Touch
+              </a>
+            </div>
+          </div>
           <div className="profile-image-container">
             <img
               src="profile.jpg" 
@@ -24,19 +30,8 @@ const Profile = () => {
               className="profile-image"
             />
           </div>
-          <div className="profile-text">
-            <h2>Hello!</h2>
-            <p>
-              I am a dedicated and ambitious Computer Science Engineering student with 
-              strong analytical and problem-solving skills. I have a solid foundation 
-              in programming and web development, and I'm passionate about creating 
-              innovative solutions that improve user experience. I thrive in collaborative
-              environments and continuously seek opportunities to learn and grow in the
-              field of technology.
-            </p>
-          </div>
         </div>
-      </section>
+      </div>
     </section>
   );
 };

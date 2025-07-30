@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import './ContactForm.css';
+import Contact from './Contact';
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -57,48 +57,67 @@ function ContactForm() {
 
   return (
     <section id="contact">
-    <div>
-      <h2>Contact Us</h2>
-      {isSubmitted ? (
-        <p style={{ color: 'green' }}>Thank you! Your message has been sent.</p>
-      ) : (
-        <form onSubmit={handleSubmit}>
-          <div>
-            <label>Name:</label>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-            />
-            {errors.name && <p style={{ color: 'red' }}>{errors.name}</p>}
-          </div>
+      <div className="section-container">
+        <div className="section-header">
+          <h2 className="section-title">Let's Work Together</h2>
+          <p className="section-subtitle">
+            Have a project in mind? I'd love to hear from you
+          </p>
+        </div>
+        
+        <div className="contact-content">
+          <Contact />
+          
+          <div className="contact-form">
+            {isSubmitted ? (
+              <div className="form-success">
+                Thank you! Your message has been sent successfully. I'll get back to you soon.
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit}>
+                <div className="form-group">
+                  <label>Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    placeholder="Your full name"
+                  />
+                  {errors.name && <div className="form-error">{errors.name}</div>}
+                </div>
 
-          <div>
-            <label>Email:</label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-            />
-            {errors.email && <p style={{ color: 'red' }}>{errors.email}</p>}
-          </div>
+                <div className="form-group">
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder="your.email@example.com"
+                  />
+                  {errors.email && <div className="form-error">{errors.email}</div>}
+                </div>
 
-          <div>
-            <label>Message:</label>
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-            ></textarea>
-            {errors.message && <p style={{ color: 'red' }}>{errors.message}</p>}
-          </div>
+                <div className="form-group">
+                  <label>Message</label>
+                  <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    placeholder="Tell me about your project or just say hello!"
+                  ></textarea>
+                  {errors.message && <div className="form-error">{errors.message}</div>}
+                </div>
 
-          <button type="submit">Submit</button>
-        </form>
-      )}
-    </div>
+                <button type="submit" className="btn-primary" style={{ width: '100%' }}>
+                  Send Message
+                </button>
+              </form>
+            )}
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
