@@ -85,6 +85,7 @@ function ContactForm() {
                     placeholder="Your full name"
                   />
                   {errors.name && <div className="form-error">{errors.name}</div>}
+                  }
                 </div>
 
                 <div className="form-group">
@@ -97,6 +98,7 @@ function ContactForm() {
                     placeholder="your.email@example.com"
                   />
                   {errors.email && <div className="form-error">{errors.email}</div>}
+                  }
                 </div>
 
                 <div className="form-group">
@@ -108,6 +110,7 @@ function ContactForm() {
                     placeholder="Tell me about your project or just say hello!"
                   ></textarea>
                   {errors.message && <div className="form-error">{errors.message}</div>}
+                  }
                 </div>
 
                 <button type="submit" className="btn-primary" style={{ width: '100%' }}>
