@@ -5,28 +5,28 @@ const projects = [
   {
     title: "Pepper Spraying Alert Necklace",
     description: "An innovative women's safety device that received the Best Paper award at ICFTA'24. Features real-time alert system and GPS tracking for enhanced security.",
-    imageUrl: "/images/pepper-necklace.jpg",
+    imageUrl: "https://images.pexels.com/photos/6963944/pexels-photo-6963944.jpeg?auto=compress&cs=tinysrgb&w=600",
     link: "https://fortune.com/2015/10/20/necklace-prevent-assault",
     showLink: "https://fortune.com/2015/10/20/necklace-prevent-assault"
   },
   {
     title: "Safest Wood Saw",
     description: "An intelligent safety system for wood cutting machines that automatically stops when detecting human proximity. Developed for MSME to enhance workplace safety.",
-    imageUrl: "/images/wood-saw.jpg",
+    imageUrl: "https://images.pexels.com/photos/5691659/pexels-photo-5691659.jpeg?auto=compress&cs=tinysrgb&w=600",
     link: "https://woodworkerlodge.com/whats-the-safest-type-of-power-saw/#:~:text=The%20safest%20type%20of%20power%20saw,#:~:text=The%20safest%20type%20of%20power%20saw,",
     showLink: "https://woodworkerlodge.com/whats-the-safest-type-of-power-saw/#:~:text=The%20safest%20type%20of%20power%20saw,#:~:text=The%20safest%20type%20of%20power%20saw,"
   },
   {
     title: "Warehouse Management System",
     description: "A comprehensive web-based system for managing warehouse operations including inventory tracking, order management, and reporting features.",
-    imageUrl: "/images/warehouse-system.jpg",
+    imageUrl: "https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&w=600",
     link: "https://github.com/Esakkiammal-G/Warehouse-Management-System",
     showLink: "https://esakkiammal-g.github.io/Warehouse-Management-System/"
   },
   {
     title: "Apple Website Clone",
     description: "A pixel-perfect recreation of Apple's website showcasing advanced CSS techniques, responsive design, and smooth animations. Built during training at Infosmite.",
-    imageUrl: "/images/apple-clone.jpg",
+    imageUrl: "https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=600",
     link: "https://github.com/Esakkiammal-G/apple-clone",
     showLink: "https://esakkiammal-g.github.io/apple-clone/"
   },
