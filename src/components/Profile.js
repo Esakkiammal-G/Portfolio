@@ -25,7 +25,7 @@ const Profile = () => {
           </div>
           <div className="profile-image-container">
             <img
-              src="https://drive.google.com/uc?export=view&id=1DqLNBy-EefrEucyz1dmJS3W252-yKHha"
+              src="Profile.jpg" 
               alt="Esakkiammal G"
               className="profile-image"
             />
