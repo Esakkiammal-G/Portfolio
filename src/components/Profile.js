@@ -25,7 +25,7 @@ const Profile = () => {
           </div>
           <div className="profile-image-container">
             <img
-              src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400"
+              src="/images/profile.jpg"
               alt="Esakkiammal G"
               className="profile-image"
             />
